@@ -1,5 +1,5 @@
-# itsruin_severExamples
-Server-Examples for FiveM (Standalone)
+# itsruin_sever-example
+Server-Example for FiveM (Standalone)
 
 ## 소개
 **CitizenFX(이하 'CFX')** 에서 제공하는 FiveM 게임 서비스를 이용한 국내 RolePlay(RP) 서버인 **HYBE**에서 사용되었던 서버 빌드 구조입니다.<br/>
