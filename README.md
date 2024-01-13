@@ -64,7 +64,7 @@ Server-Examples for FiveM (Standalone)
 ㄴ itsruin_entityHealthManager -- 단일 리소스 2
 ```
 
-이렇게 구성되어 있는 폴더가 있다고 가정하였을 때, `[source]`폴더의 시작 순서는 **[citizenJobs] → itsruin_discordActive → itsruin_entityHealthManager**순서라는 뜻입니다.<br/><br/>
+이렇게 구성되어 있는 폴더가 있다고 가정하였을 때, `[source]`폴더의 시작 순서는 **[citizenJobs] → itsruin_discordActive → itsruin_entityHealthManager**라는 뜻입니다.<br/><br/>
 이러한 방식을 적용함으로써 매번 리소스를 활성화/비활성화할 때 마다 일일히 CFG 파일에 변동사항을 적용하는 비효율적인 문제를 해결할 수 있습니다.<br/>
 현재 적용되어 있는 해당 파일의 구조는 다음과 같습니다.
 
