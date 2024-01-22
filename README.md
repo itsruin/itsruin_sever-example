@@ -39,33 +39,7 @@ Server-Example for FiveM (Standalone)
 - `[scaleforms]` 폴더에는 GFX (커스텀 폰트, 미니맵 디자인 등) 파일을 적용합니다.<br/>
 - `[vehicles]` 폴더에는 차량 파일을 적용합니다.<br/>
 
-`runner` CFG 설정 파일과 서버 구동기를 보관합니다.<br/>
-`runner/configs` CFG 설정 파일을 보관합니다.<br/>
-- `config-sets` CFG 세부 설정 요소 파일을 보관합니다.<br/>
-
-## CFG 파일의 구성
-`server.cfg` 기본적인 CFG 파일입니다. 세부 설정 요소 파일의 경로를 구성합니다.<br/>
-- `config-sets/server_perms.cfg` 서버 퍼미션을 설정하는 CFG 파일입니다. vMenu나 기타 시스템에 사용될 수 있습니다.<br/>
-- `config-sets/server_resources.cfg` 서버에서 가동할 리소스를 설정하는 CFG 파일입니다. 관련 내용은 아래에서 자세하게 설명하겠습니다!<br/>
-- `config-sets/server_shared.cfg` `server.cfg`이외에 존재하는 CFX 서버의 기본적인 부분을 설정하는 CFG 파일입니다.<br/>
-
-## 카테고리 범주 방식과 응용
-`server_resources.cfg` 파일에서는 CFX에서 서버 명령어로 지원하는 `[]` 범주를 이용하였습니다.<br/>
-`[]` 범주 폴더에 포함된 리소스는 **이름/오름차순** 정렬 기준을 사용하여 **2차 폴더 → 1차 폴더** 순서대로 시작됩니다.<br/>
-아래는 위에서 설명한 범주 폴더의 예시 구성입니다.
-```lua
-[source] -- 범주 폴더
-ㄴ [citizenJobs] -- 시민직업 묶음파일들 (fishing, miner, taxi, etc.)
-   ㄴ itsruin_fishing
-   ㄴ itsruin_miner
-   ㄴ itsruin_taxi
-   ㄴ ...
-ㄴ itsruin_discordActive -- 단일 리소스 1
-ㄴ itsruin_entityHealthManager -- 단일 리소스 2
-```
-
-이렇게 구성되어 있는 폴더가 있다고 가정하였을 때, `[source]`폴더의 시작 순서는 **[citizenJobs] → itsruin_discordActive → itsruin_entityHealthManager**라는 뜻입니다.<br/><br/>
-이러한 방식을 적용함으로써 매번 리소스를 활성화/비활성화할 때 마다 일일히 CFG 파일에 변동사항을 적용하는 비효율적인 문제를 해결할 수 있습니다.<br/>
+`이 CFG 파일에 변동사항을 적용하는 비효율적인 문제를 해결할 수 있습니다.<br/>
 현재 적용되어 있는 해당 파일의 구조는 다음과 같습니다.
 
 ```cfg
